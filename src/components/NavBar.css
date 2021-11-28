@@ -20,7 +20,7 @@ ul{
     font-size: 1.5rem;
     list-style: none;
     font-weight: bold;
-    width: 90%;
+    width:70%;
 
     
    
@@ -33,6 +33,7 @@ li{
 
 
 img{
+    max-width: 100%;
 width: 150px;    
 height: auto;
 
@@ -40,4 +41,6 @@ height: auto;
 
 .imgNav{
     display: flex;
+    width: auto;
+    height: auto;
 }
