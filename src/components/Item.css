@@ -1,0 +1,15 @@
+.cardProduct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    max-width: 100%;
+}
+
+.productoImg{
+    margin-top:15px
+}

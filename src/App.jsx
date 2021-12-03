@@ -10,7 +10,7 @@ function App() {
   return (
       <header className="App-header">
       <NavBar />
-      <ItemListContainer saludo= "Hola este es mi componente ItemListContainer" />  
+      <ItemListContainer saludo= "Productos" />  
       { /* <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>
         <p>
