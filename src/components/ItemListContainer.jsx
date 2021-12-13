@@ -5,6 +5,7 @@ import List from '../List.json'
 import { useEffect, useState } from 'react';
 import ItemList from './ItemList';
 import Loading from '../loading.svg';
+import { useParams } from 'react-router-dom';
 
 const getFetched = new Promise((resolve,reject)=>{
     setTimeout(() => {
@@ -16,6 +17,8 @@ const getFetched = new Promise((resolve,reject)=>{
 function ItemListContainer(props){
     const [List, setList] = useState([]);
     const [loading, setLoading] = useState(true);
+
+    const {id} = useParams();
 
     useEffect(() => {
         getFetched.then(data => setList(data))

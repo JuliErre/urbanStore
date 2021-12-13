@@ -21,16 +21,18 @@ ul{
     list-style: none;
     font-weight: bold;
     width:70%;
+    color: white;
 
     
    
 }
 
-li{
-   color: white;
+
+
+.navLink{
+    color: white;
+    text-decoration: none;
 }
-
-
 
 img{
     max-width: 100%;

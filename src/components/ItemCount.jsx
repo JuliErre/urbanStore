@@ -36,7 +36,7 @@ function ItemCount() {
                 </div>
             </div>
             <div>
-            <button className="seeCount" onClick={() => console.log("la cantidad del carrito es " + count)}>Agregar al carrito</button>
+            <button className="btnBlue" onClick={() => console.log("la cantidad del carrito es " + count)}>Agregar al carrito</button>
             </div>
         </div>
 

@@ -1,0 +1,44 @@
+.detailCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: black;
+    background-color: rgb(255,255,255,0.9);
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 80%;
+    padding: 40px;
+    margin: 15px;
+}
+.imgDetailContainer{
+    max-width: 100%;
+    width: 500px;
+    height:auto;
+    margin-left: 15px;
+    max-height: 100%;
+   
+}
+
+.imgDetail{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    
+   
+}
+
+.infoDetail{
+    margin: 50px;
+    max-width: 100%;
+}
+
+.detailBtns{
+    display: flex;
+    gap: 15px;
+}

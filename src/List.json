@@ -3,6 +3,7 @@
         "name": "Remera Nike",
         "id": 1,
         "price":8000,
+        "desc": "Remera negra urbana marca Nike, made in Taiwan" ,
         "img":"https://ferreira.vteximg.com.br/arquivos/ids/379899-540-540/ni_dd1256010.jpg?v=637623956032300000"
     },
 
@@ -10,6 +11,7 @@
         "name": "Remera Adidas",
         "id": 2,
         "price":7000,
+        "desc": "Remera negra urbana marca Adidas, made in China" ,
         "img":"https://assets.adidas.com/images/w_320,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/7faf852ad1604a01808fa83500d479d7_9366/Remera_3_Tiras_Negro_CW1202_21_model.jpg"
     },
 
@@ -17,6 +19,7 @@
         "name": "Remera Reebok",
         "id": 3,
         "price":8500,
+        "desc": "Remera blanca urbana marca reebok, made in China" ,
         "img":"https://assets.reebok.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/4075e1a9002a4a37946aaaf1007d41ca_9366/Remera_Classics_International_Blanco_FK2625_01_standard.jpg"
     }
 ]
