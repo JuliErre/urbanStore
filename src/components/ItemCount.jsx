@@ -11,11 +11,12 @@ import './ItemCount.css'
 </p>
 */
 
-function ItemCount() {
+function ItemCount({stock, onAdd}) {
+    console.log(stock);
     const [count, setCount] = useState(0)
     
     const sumCount = () => {
-        count < 10 ? setCount(count + 1) : console.log("no se puede sumar mas");
+        count < stock ? setCount(count + 1) : console.log("no se puede sumar mas");
     }
     
     const resCount = () => {
@@ -36,7 +37,7 @@ function ItemCount() {
                 </div>
             </div>
             <div>
-            <button className="btnBlue" onClick={() => console.log("la cantidad del carrito es " + count)}>Agregar al carrito</button>
+            <button className="btnBlue" disabled={count === 0} onClick={() => onAdd(count)}>Agregar al carrito</button>
             </div>
         </div>
 
