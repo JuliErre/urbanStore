@@ -13,23 +13,14 @@ function App() {
     <BrowserRouter>
       <header className="App-header">
         <NavBar />
-        <Routes>
-          <Route exact path ="/" element = {<ItemListContainer saludo="Productos" />}/>
-          <Route exact path ="/detalle/:id" element = {<ItemDetailContainer />}/>
-          <Route exact path ="/jaja" element = {<h1> jajaja </h1>}/>
-         
-
-          
-          { /* <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-  */}
-        </Routes>
       </header>
+      <section className="main">
+      <Routes>
+          <Route exact path ="/productos" element = {<ItemListContainer saludo="Productos" />}/>
+          <Route exact path ="/detalle/:id" element = {<ItemDetailContainer />}/>
+          <Route exact path ="/productos/:category" element = {<ItemListContainer saludo="Productos" />}/>
+        </Routes>
+      </section>
     </BrowserRouter>
   )
 

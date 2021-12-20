@@ -1,6 +1,7 @@
 [
     {
         "name": "Remera Nike",
+        "marca":"nike",
         "id": 1,
         "price":8000,
         "desc": "Remera negra urbana marca Nike, made in Taiwan" ,
@@ -9,6 +10,7 @@
 
     {
         "name": "Remera Adidas",
+        "marca":"adidas",
         "id": 2,
         "price":7000,
         "desc": "Remera negra urbana marca Adidas, made in China" ,
@@ -17,9 +19,43 @@
 
     {
         "name": "Remera Reebok",
+        "marca":"reebok",
         "id": 3,
         "price":8500,
         "desc": "Remera blanca urbana marca reebok, made in China" ,
         "img":"https://assets.reebok.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/4075e1a9002a4a37946aaaf1007d41ca_9366/Remera_Classics_International_Blanco_FK2625_01_standard.jpg"
+    },
+
+
+    {
+        "name": "Remera Adidas",
+        "marca":"adidas",
+        "id": 4,
+        "price":6000,
+        "desc": "Remera negra urbana marca Adidas, made in China" ,
+        "img":"https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/566d9fdb9c1042a88fe0abde00cfe568_9366/Remera_Estampada_Trifolio_3D_Negro_GN4299_21_model.jpg"
+    },
+
+    {
+        "name": "Remera Reebok",
+        "marca":"reebok",
+        "id": 5,
+        "price":6500,
+        "desc": "Remera gris urbana marca reebok, made in China" ,
+        "img":"https://assets.reebok.com/images/w_383,h_383,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/3bf897e6b0384e39bd56ab2d018861f4_9366/remera-estampada-reebok-stacked.jpg"
+    },
+
+
+    {
+        "name": "Remera Nike",
+        "marca":"nike",
+        "id": 6,
+        "price":7500,
+        "desc": "Remera verde con logo blanco urbana marca Nike, made in China" ,
+        "img":"https://celadasa.vteximg.com.br/arquivos/ids/165051-423-423/AR4209-010-01.jpg?v=637296776988070000"
     }
+
+    
+
+    
 ]

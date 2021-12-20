@@ -1,6 +1,18 @@
+.filtro{ 
+    display: flex;
+    flex-basis: 23rem;
+    flex-grow: 1;
+    justify-content:center;
+
+}
 .ItemListContainer{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 999 ;
+    max-width: 100%;
+  
 }
+

@@ -10,7 +10,7 @@ nav{
  
 }
 
-ul{
+.navbar{
     text-decoration: none;
     display: flex;
     flex-direction: row;

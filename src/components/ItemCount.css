@@ -1,13 +1,9 @@
 .ItemCountContainer{
-    background-color: #F7F7F7;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:center;
-    width: 400px;
-    height: 200px;
-    border-radius: 10px;
-    
+
 }
 
 .itemHead{
@@ -19,6 +15,8 @@
     width: 200px;
     background-color: #FFFFFF;
     margin-bottom: 15px;
+    font-size: 1.2rem;
+  
 }
 
 p{
@@ -27,7 +25,7 @@ p{
 }
 
 .btnCount{
-    color: #3583FA;
+    color: black;
     background: none;
     box-shadow: 0;
     border-style: none;
@@ -35,13 +33,13 @@ p{
 
 
 .btnBlue{
-    border-radius: 5px;
+    border-radius: 10px;
     border-style: ridge;
     background: none;
-    color: #3583FA;
-    border-color: #3583FA;
-    font-size: 1.3rem;
-    width: 300px;
+    color: #15171a;
+    border-color: rgb(255,255,255,0.5);
+    font-size: 1rem;
+    width: 200px;
     height: 50px;
-    
+    font-weight: bold;
 }

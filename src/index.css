@@ -9,8 +9,27 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size:cover;
+  height: 120rem;
+
+
  
 
+}
+
+#root{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+}
+header{
+  grid-row: 1;
+  grid-column: 1/4;
+
+}
+section{
+  grid-row: 2;
+  grid-column: 1/4;
+  
 }
 
 code {
