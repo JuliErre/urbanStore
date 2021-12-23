@@ -1,17 +1,24 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useState } from 'react/cjs/react.development'
+import { useContext, useState } from 'react/cjs/react.development'
+import { CartContext } from './CartContext'
 import ItemCount from './ItemCount'
 import './ItemDetail.css'
 
 function ItemDetail({ product }) {
     console.log(product.stock)
     const [addCart, setAddCart] = useState(false);
+    const [precioTotal, setPrecioTotal] = useState(0);
+     const {cartList, addToCart} = useContext(CartContext)
 
+    
     function onAdd (cantidad) {
-        setAddCart(true);
-        console.log(cantidad)
+        let cantidadTotal = parseInt(cantidad) * parseInt(product.price)
+        addToCart({...product,cantidad:cantidad,precioTotal:cantidadTotal})
+        setAddCart(true)
     }
+
+    console.log(cartList)
     return (
 
         <div className="detailCard">
@@ -29,6 +36,8 @@ function ItemDetail({ product }) {
                     <button className="btnBlue">Comprar</button>
                 </div>
             </div>
+
+        
 
 
 
