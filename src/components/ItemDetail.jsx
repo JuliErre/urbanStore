@@ -33,7 +33,7 @@ function ItemDetail({ product }) {
                     {!addCart ? <ItemCount stock={product.stock} onAdd={onAdd} /> :
                         <Link to="/cart"> <button className="btnBlue"> Ir Carrito </button> </Link>
                     }
-                    <button className="btnBlue">Comprar</button>
+                    
                 </div>
             </div>
 

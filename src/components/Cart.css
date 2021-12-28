@@ -1,32 +1,33 @@
-.cartList{
+.cartList {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     background-color: white;
     max-width: 100%;
-    width: 800px;
-    min-height:700px;
+    width: 1200px;
+    min-height: 700px;
     height: auto;
     border-radius: 5px;
     margin: 20px;
     gap: 15px;
 }
-.itemCart{
+
+.itemCart {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 15px;      
-    border-width:  0px 0px 1px 0px;    
+    gap: 15px;
+    border-width: 0px 0px 1px 0px;
     border-style: solid;
     width: 100%;
     font-size: 1.5rem;
     margin-bottom: 15px;
-    
+
 }
 
-.btnBlack{
+.btnBlack {
     border-radius: 10px;
     background: #2e3031;
     color: rgba(255, 255, 255, 0.835);
@@ -35,27 +36,53 @@
     height: 50px;
     font-weight: bold;
     border-style: none;
+    cursor: pointer;
 }
 
-.head{
+.head {
     align-self: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90%;
     max-width: 100%;
-    
-}
-.head div{
-    display: flex;
-    align-items: center;
-   gap: 20px
+
 }
 
-.carritoVacio{
+.head div {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.carritoVacio {
     align-self: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+table {
+    text-align: left;
+    
+}
+
+th {
+    width: 230px;
+    max-width: 100%;
+   
+    
+}
+
+
+.imgCart{
+    border-radius: 5px;
+    width: 90px;
+}
+
+.head div{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
 }

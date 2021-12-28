@@ -15,7 +15,7 @@ function NavBar() {
                 <li><Link className="navLink "to={'/cuenta'}>Cuenta</Link></li>
                 <li><Link className="navLink "to={'/contacto'}>Contacto</Link></li>
             </ul>
-            <CartWidget/>
+             <CartWidget/> 
         </nav>
     )
 

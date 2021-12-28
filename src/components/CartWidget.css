@@ -1,0 +1,23 @@
+.cartWidget{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.cant {
+    color: black;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: rgb(177, 169, 169);
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
