@@ -5,13 +5,14 @@ import products from '../List.json'
 import { useParams } from 'react-router-dom';
 import Loading from '../loading.svg';
 import './ItemDetailContainer.css'
+import {doc, getDoc, getFirestore,  collection, getDocs, query} from 'firebase/firestore'
 
 
-const getItem = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve(products)
-    },2000)
-})
+// const getItem = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve(products)
+//     },2000)
+// })
 
 
 
@@ -21,13 +22,20 @@ function ItemDetailContainer() {
     const { id } = useParams();
 
     useEffect(() => {
-        getItem.then(data => setProduct(data.find(prod => prod.id == id)))
-            .finally(() => setLoading(false))
-    }, [id]);
-
+        const db = getFirestore();
+        const queryCollection = doc(db,'productos',id)
+        getDoc(queryCollection)
+        .then(res => setProduct({id: res.id,...res.data()}))
+        .catch(err => console.log(err) )
+        .finally(() => setLoading(false) )
+    },[id])
     
-  
-
+    
+    // useEffect(() => {
+    //     getItem.then(data => setProduct(data.find(prod => prod.id == id)))
+    //         .finally(() => setLoading(false))
+    // }, [id]);
+    
 
     return (
 
