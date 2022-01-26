@@ -6,8 +6,7 @@ import "./ItemDetail.css";
 
 function ItemDetail({ product }) {
     const [addCart, setAddCart] = useState(false);
-    const [precioTotal, setPrecioTotal] = useState(0);
-    const { cartList, addToCart } = useContext(CartContext);
+    const { addToCart } = useContext(CartContext);
 
     function onAdd(cantidad) {
         let cantidadTotal = parseInt(cantidad) * parseInt(product.price);

@@ -3,7 +3,7 @@ import ItemDetail from './ItemDetail'
 import { useParams } from 'react-router-dom';
 import Loading from '../loading.svg';
 import './ItemDetailContainer.css'
-import { doc, getDoc, getFirestore, collection, getDocs, query } from 'firebase/firestore'
+import { doc, getDoc, getFirestore } from 'firebase/firestore'
 
 
 

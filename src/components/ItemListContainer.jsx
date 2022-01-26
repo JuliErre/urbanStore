@@ -4,7 +4,7 @@ import ItemList from './ItemList';
 import Loading from '../loading.svg';
 import { useParams } from 'react-router-dom';
 import ItemFilter from './ItemFilter';
-import { doc, getDoc, getFirestore, collection, getDocs,query,where } from 'firebase/firestore'
+import { getFirestore, collection, getDocs,query,where } from 'firebase/firestore'
 
 
 function ItemListContainer(props) {

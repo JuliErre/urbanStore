@@ -1,11 +1,11 @@
 import React, { useContext, useState } from "react";
 import { ErrorMessage, Formik } from "formik";
 import "./Form.css";
-import {addDoc,collection,doc,getFirestore,Timestamp,updateDoc,writeBatch,} from "firebase/firestore";
+import {addDoc,collection,getFirestore,Timestamp} from "firebase/firestore";
 import { CartContext } from "../context/CartContext";
 
 function Form() {
-    const { cartList, clearCart, removeProduct, total } = useContext(CartContext);
+    const { cartList, total } = useContext(CartContext);
     const [enviado, setEnviado] = useState(false);
 
     const [idOrder, setIdOrder] = useState();
