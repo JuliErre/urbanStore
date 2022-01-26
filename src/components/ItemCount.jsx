@@ -12,7 +12,7 @@ import './ItemCount.css'
 */
 
 function ItemCount({stock, onAdd}) {
-    console.log(stock);
+    
     const [count, setCount] = useState(0)
     
     const sumCount = () => {

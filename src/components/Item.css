@@ -15,6 +15,7 @@
     box-shadow: 20px 20px 40px 10px rgba(0, 0, 0, 0.6);
 }
 
+
 .productImgContainer{
     display: flex;
     width: 200px;
@@ -48,6 +49,7 @@
     justify-content: center;
     align-items:center;
     gap:85px;
+    text-transform: capitalize;
     
 }
 

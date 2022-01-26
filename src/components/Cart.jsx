@@ -9,19 +9,20 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 
 
+
 function Cart() {
-    const [total, setTotal] = useState()
+    // const [total, setTotal] = useState()
 
-    const { cartList, clearCart, removeProduct } = useContext(CartContext)
-    console.log(CartContext)
-    useEffect(() => {
-        let precioTotal = 0
-        cartList.map(prod => {
-            precioTotal += prod.precioTotal
+    const { cartList, clearCart, removeProduct, total } = useContext(CartContext)
+    
+    // useEffect(() => {
+    //     let precioTotal = 0
+    //     cartList.map(prod => {
+    //         precioTotal += prod.precioTotal
 
-        });
-        setTotal(precioTotal)
-    }, [cartList])
+    //     });
+    //     setTotal(precioTotal)
+    // }, [cartList])
 
 
     return (
@@ -32,7 +33,7 @@ function Cart() {
             <div className="head">
                 <div>
                     <button className="btnBlack" onClick={clearCart}>Vaciar carrito</button>
-                    <button className="btnBlack">Terminar compra</button>
+                   <Link to={'/form'}> <button className="btnBlack">Terminar compra</button> </Link>
                 </div>
                 <h4>Total: $ {total} </h4>
             </div>

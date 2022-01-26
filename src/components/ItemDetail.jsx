@@ -6,7 +6,7 @@ import ItemCount from './ItemCount'
 import './ItemDetail.css'
 
 function ItemDetail({ product }) {
-    console.log(product.stock)
+   
     const [addCart, setAddCart] = useState(false);
     const [precioTotal, setPrecioTotal] = useState(0);
      const {cartList, addToCart} = useContext(CartContext)
@@ -18,7 +18,7 @@ function ItemDetail({ product }) {
         setAddCart(true)
     }
 
-    console.log(cartList)
+    
     return (
 
         <div className="detailCard">

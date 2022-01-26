@@ -1,0 +1,41 @@
+.footer{
+    grid-row: 3;
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 100%;
+    width: 95%;
+    border: 1px solid;
+    background-color: white;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10px;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.redesIcons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.footer p {
+    font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

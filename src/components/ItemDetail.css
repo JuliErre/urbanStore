@@ -35,6 +35,10 @@
     max-width: 100%;
 }
 
+.infoDetail h1{
+    text-transform: capitalize;
+}
+
 .detailBtns{
     display: flex;
     gap: 15px;

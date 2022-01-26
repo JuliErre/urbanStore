@@ -2,14 +2,16 @@ import React from 'react'
 import ItemCount from './ItemCount';
 import './Item.css'
 import { Link } from 'react-router-dom';
-import { useState } from 'react/cjs/react.development';
-
+import { useContext } from 'react/cjs/react.development';
+import { CartContext } from '../context/CartContext'
 
 
 function Item({ product }) {
+    const {cartList, addToCart} = useContext(CartContext)
 
     function onAdd (cantidad) {
-        console.log(cantidad)
+        let cantidadTotal = parseInt(cantidad) * parseInt(product.price)
+        addToCart({...product,cantidad:cantidad,precioTotal:cantidadTotal})
     }
     return (
         <div className="cardProduct">

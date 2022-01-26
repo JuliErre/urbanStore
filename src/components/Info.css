@@ -1,0 +1,13 @@
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contacto h4{
+    color:white;
+    font-size: 2rem;
+    font-weight: bold;
+}

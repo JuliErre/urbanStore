@@ -1,11 +1,21 @@
 import React from 'react'
-import { useState, createContext } from 'react'
+import { useState, useEffect, createContext } from 'react'
 
 export const CartContext = createContext([])
 
 
 function CartContextProvider({ children }) {
     const [cartList, setCarList] = useState([])
+    const [total, setTotal] = useState()
+
+    useEffect(() => {
+             let precioTotal = 0
+             cartList.map(prod => {
+                 precioTotal += prod.precioTotal
+    
+             });
+             setTotal(precioTotal)
+         }, [cartList])
 
 
     function addToCart(prod) {
@@ -36,6 +46,16 @@ function CartContextProvider({ children }) {
 
     }
 
+    // function getTotal(){
+    //     let precioTotal = 0
+    //     cartList.map(prod => {
+    //         precioTotal += prod.precioTotal
+
+    //     });
+
+    //     setTotal(precioTotal)
+    // }
+
 
 
     return (
@@ -43,7 +63,8 @@ function CartContextProvider({ children }) {
             cartList,
             addToCart,
             clearCart,
-            removeProduct
+            removeProduct,
+            total
 
         }}>
             {children}
