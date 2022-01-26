@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './ItemListContainer.css'
-import ItemList from './ItemList';
-import Loading from '../loading.svg';
+import ItemList from '../ItemList/ItemList';
+import Loading from '../../loading.svg';
 import { useParams } from 'react-router-dom';
-import ItemFilter from './ItemFilter';
+import ItemFilter from '../ItemFilter/ItemFilter';
 import { getFirestore, collection, getDocs,query,where } from 'firebase/firestore'
 
 

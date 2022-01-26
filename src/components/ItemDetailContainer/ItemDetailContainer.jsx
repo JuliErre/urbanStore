@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import ItemDetail from './ItemDetail'
+import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom';
-import Loading from '../loading.svg';
+import Loading from '../../loading.svg';
 import './ItemDetailContainer.css'
 import { doc, getDoc, getFirestore } from 'firebase/firestore'
 

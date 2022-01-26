@@ -1,12 +1,12 @@
 import React from 'react'
 import './NavBar.css'
-import CartWidget from './CartWidget'
+import CartWidget from '../CartWidget/CartWidget'
 import { Link } from 'react-router-dom'
 function NavBar() {
     return (
         <nav>
             <div className="imgNav">
-                <img src="/src/assets/Urban.png" alt="" />
+            <img src="https://i.ibb.co/8BymH6v/Urban.png" alt="Urban" />
             </div>
             <ul className={"navbar"}>
                 <li><Link className="navLink "to={'/'} >Home</Link></li>

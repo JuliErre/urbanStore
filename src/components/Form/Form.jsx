@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { ErrorMessage, Formik } from "formik";
 import "./Form.css";
 import {addDoc,collection,getFirestore,Timestamp} from "firebase/firestore";
-import { CartContext } from "../context/CartContext";
+import { CartContext } from "../../context/CartContext";
 
 function Form() {
     const { cartList, total } = useContext(CartContext);
