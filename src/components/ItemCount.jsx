@@ -2,15 +2,6 @@ import React, { useState } from 'react'
 import './ItemCount.css'
 
 
-/* <img src={logo} className="App-logo" alt="logo" />
-<p>Hello Vite + React!</p>
-<p>
-  <button type="button" onClick={() => setCount((count) => count + 1)}>
-    count is: {count}
-  </button>
-</p>
-*/
-
 function ItemCount({stock, onAdd}) {
     
     const [count, setCount] = useState(0)

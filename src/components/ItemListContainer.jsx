@@ -7,9 +7,6 @@ import ItemFilter from './ItemFilter';
 import { doc, getDoc, getFirestore, collection, getDocs,query,where } from 'firebase/firestore'
 
 
-
-
-
 function ItemListContainer(props) {
     const [List, setList] = useState([]);
     const [loading, setLoading] = useState(true);
