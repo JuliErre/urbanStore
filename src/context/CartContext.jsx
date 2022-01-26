@@ -1,5 +1,5 @@
-import React from 'react'
-import { useState, useEffect, createContext } from 'react'
+import React,{ useState, useEffect, createContext } from 'react'
+
 
 export const CartContext = createContext([])
 
@@ -28,7 +28,6 @@ function CartContextProvider({ children }) {
 
             setCarList([...cartList,{...prod, cantidad:prod.cantidad + oldCant, precioTotal: prod.precioTotal + oldTotal}])
 
-            //cartList[index].cantidad += prod.cantidad
             
         }
 
@@ -45,17 +44,6 @@ function CartContextProvider({ children }) {
         setCarList([...cartList])
 
     }
-
-    // function getTotal(){
-    //     let precioTotal = 0
-    //     cartList.map(prod => {
-    //         precioTotal += prod.precioTotal
-
-    //     });
-
-    //     setTotal(precioTotal)
-    // }
-
 
 
     return (

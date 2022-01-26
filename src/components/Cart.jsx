@@ -1,9 +1,7 @@
-import React from 'react'
-import { useContext } from 'react'
+import React,{ useContext }  from 'react'
 import { CartContext } from '../context/CartContext'
 import './Cart.css'
 import { Link } from 'react-router-dom'
-import { useEffect, useState } from 'react/cjs/react.development'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
@@ -11,19 +9,10 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 
 function Cart() {
-    // const [total, setTotal] = useState()
+  
 
     const { cartList, clearCart, removeProduct, total } = useContext(CartContext)
     
-    // useEffect(() => {
-    //     let precioTotal = 0
-    //     cartList.map(prod => {
-    //         precioTotal += prod.precioTotal
-
-    //     });
-    //     setTotal(precioTotal)
-    // }, [cartList])
-
 
     return (
 
