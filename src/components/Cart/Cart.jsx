@@ -25,7 +25,7 @@ function Cart() {
             {!cartList.length ? (
                 <div className="carritoVacio">
                     <h3>Carrito Vacio</h3>
-                    <Link to={"/productos"}>
+                    <Link to={"/"}>
                         {" "}
                         <button className="btnBlue"> Volver a productos </button>{" "}
                     </Link>

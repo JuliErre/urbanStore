@@ -10,9 +10,7 @@ function NavBar() {
             </div>
             <ul className={"navbar"}>
                 <li><Link className="navLink "to={'/'} >Home</Link></li>
-                <li><Link className="navLink "to={'/productos'}>Productos</Link></li>
                 <li><Link className="navLink "to={'/ayuda'}>Ayuda</Link></li>
-                <li><Link className="navLink "to={'/cuenta'}>Cuenta</Link></li>
                 <li><Link className="navLink "to={'/contacto'}>Contacto</Link></li>
             </ul>
                 <CartWidget/> 

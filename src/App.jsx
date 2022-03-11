@@ -23,7 +23,7 @@ function App() {
         </header>
         <section className="main">
           <Routes>
-            <Route exact path="/productos" element={<ItemListContainer saludo="Productos" />} />
+            <Route exact path="/" element={<ItemListContainer saludo="Productos" />} />
             <Route exact path="/detalle/:id" element={<ItemDetailContainer />} />
             <Route exact path="/productos/:category" element={<ItemListContainer saludo="Remeras" />} />
             <Route exact path="/cart" element={<Cart/>}/>
